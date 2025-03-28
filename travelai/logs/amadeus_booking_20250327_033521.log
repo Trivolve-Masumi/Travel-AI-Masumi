@@ -1,0 +1,361 @@
+2025-03-27 03:37:01,595 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:37:01,596 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:37:01,596 | amadeus_booking | ERROR | Missing traveler information: first_name, last_name
+2025-03-27 03:37:18,524 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:37:18,525 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:37:18,525 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 03:37:19,316 | amadeus_booking | INFO | Got access token: 6XzW4JAb6J...
+2025-03-27 03:37:19,318 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 03:37:19,318 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 03:37:19,318 | amadeus_booking | INFO | Created flight offer with carrier: , flight: , from:  to: 
+2025-03-27 03:37:19,319 | amadeus_booking | INFO | Booking payload: {
+  "data": {
+    "type": "flight-order",
+    "flightOffers": [
+      {
+        "type": "flight-offer",
+        "id": "1",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "lastTicketingDate": "2025-05-01",
+        "itineraries": [
+          {
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "",
+                  "terminal": "",
+                  "at": "2025-05-01T00:00:00"
+                },
+                "arrival": {
+                  "iataCode": "",
+                  "terminal": "",
+                  "at": "2025-05-01T01:00:00"
+                },
+                "carrierCode": "",
+                "number": "",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": ""
+                },
+                "duration": "PT2H",
+                "id": "1",
+                "numberOfStops": 0
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "EUR",
+          "total": "155.27",
+          "base": "123.00",
+          "grandTotal": "155.27"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": false
+        },
+        "validatingAirlineCodes": [
+          ""
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "EUR",
+              "total": "155.27",
+              "base": "123.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "1",
+                "cabin": "ECONOMY",
+                "fareBasis": "YFFBR",
+                "class": "Y",
+                "includedCheckedBags": {
+                  "quantity": 0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        }
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}
+2025-03-27 03:37:19,319 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 03:37:20,255 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 03:37:20,257 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_033720.txt
+2025-03-27 03:37:20,258 | amadeus_booking | ERROR | API errors: Booking failed: departure iataCode must be a 3-letter code (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/departure/iataCode); carrier code is a 2 or 3 alphanum except 'YY' and 'YYY' (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/operating/carrierCode); validatingAirlineCode is a 2 alphanum except 'YY' (Code: 477, Path: /data/flightOffers[0]/validatingAirlineCodes[0]); arrival iataCode must be a 3-letter code (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/arrival/iataCode); carrier code is a 2 or 3 alphanum except 'YY' and 'YYY' (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/carrierCode)
+2025-03-27 03:37:34,370 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:37:34,373 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:37:34,373 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 03:37:35,132 | amadeus_booking | INFO | Got access token: Zzt6a2vyTg...
+2025-03-27 03:37:35,133 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 03:37:35,133 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 03:37:35,133 | amadeus_booking | INFO | Created flight offer with carrier: , flight: , from:  to: 
+2025-03-27 03:37:35,134 | amadeus_booking | INFO | Booking payload: {
+  "data": {
+    "type": "flight-order",
+    "flightOffers": [
+      {
+        "type": "flight-offer",
+        "id": "1",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "lastTicketingDate": "2025-05-01",
+        "itineraries": [
+          {
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "",
+                  "terminal": "",
+                  "at": "2025-05-01T00:00:00"
+                },
+                "arrival": {
+                  "iataCode": "",
+                  "terminal": "",
+                  "at": "2025-05-01T01:00:00"
+                },
+                "carrierCode": "",
+                "number": "",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": ""
+                },
+                "duration": "PT2H",
+                "id": "1",
+                "numberOfStops": 0
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "EUR",
+          "total": "155.27",
+          "base": "123.00",
+          "grandTotal": "155.27"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": false
+        },
+        "validatingAirlineCodes": [
+          ""
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "EUR",
+              "total": "155.27",
+              "base": "123.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "1",
+                "cabin": "ECONOMY",
+                "fareBasis": "YFFBR",
+                "class": "Y",
+                "includedCheckedBags": {
+                  "quantity": 0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        }
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}
+2025-03-27 03:37:35,134 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 03:37:36,116 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 03:37:36,121 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_033736.txt
+2025-03-27 03:37:36,121 | amadeus_booking | ERROR | API errors: Booking failed: departure iataCode must be a 3-letter code (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/departure/iataCode); carrier code is a 2 or 3 alphanum except 'YY' and 'YYY' (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/operating/carrierCode); validatingAirlineCode is a 2 alphanum except 'YY' (Code: 477, Path: /data/flightOffers[0]/validatingAirlineCodes[0]); arrival iataCode must be a 3-letter code (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/arrival/iataCode); carrier code is a 2 or 3 alphanum except 'YY' and 'YYY' (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/carrierCode)
+2025-03-27 03:37:48,183 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:37:48,183 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:37:48,183 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 03:37:48,919 | amadeus_booking | INFO | Got access token: 7mdnvQbGv9...
+2025-03-27 03:37:48,919 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 03:37:48,919 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 03:37:48,920 | amadeus_booking | INFO | Created flight offer with carrier: , flight: , from:  to: 
+2025-03-27 03:37:48,921 | amadeus_booking | INFO | Booking payload: {
+  "data": {
+    "type": "flight-order",
+    "flightOffers": [
+      {
+        "type": "flight-offer",
+        "id": "1",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "lastTicketingDate": "2025-05-01",
+        "itineraries": [
+          {
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "",
+                  "terminal": "",
+                  "at": "2025-05-01T00:00:00"
+                },
+                "arrival": {
+                  "iataCode": "",
+                  "terminal": "",
+                  "at": "2025-05-01T01:00:00"
+                },
+                "carrierCode": "",
+                "number": "",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": ""
+                },
+                "duration": "PT2H",
+                "id": "1",
+                "numberOfStops": 0
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "EUR",
+          "total": "155.27",
+          "base": "123.00",
+          "grandTotal": "155.27"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": false
+        },
+        "validatingAirlineCodes": [
+          ""
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "EUR",
+              "total": "155.27",
+              "base": "123.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "1",
+                "cabin": "ECONOMY",
+                "fareBasis": "YFFBR",
+                "class": "Y",
+                "includedCheckedBags": {
+                  "quantity": 0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        }
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}
+2025-03-27 03:37:48,932 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 03:37:49,877 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 03:37:49,879 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_033749.txt
+2025-03-27 03:37:49,879 | amadeus_booking | ERROR | API errors: Booking failed: departure iataCode must be a 3-letter code (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/departure/iataCode); carrier code is a 2 or 3 alphanum except 'YY' and 'YYY' (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/operating/carrierCode); validatingAirlineCode is a 2 alphanum except 'YY' (Code: 477, Path: /data/flightOffers[0]/validatingAirlineCodes[0]); arrival iataCode must be a 3-letter code (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/arrival/iataCode); carrier code is a 2 or 3 alphanum except 'YY' and 'YYY' (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/carrierCode)

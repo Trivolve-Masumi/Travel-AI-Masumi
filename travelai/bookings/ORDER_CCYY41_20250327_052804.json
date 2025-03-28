@@ -1,0 +1,77 @@
+{
+  "data": {
+    "type": "flight-order",
+    "id": "ORDER_CCYY41_20250327_052804",
+    "queuingOfficeId": "AMADEUS",
+    "associatedRecords": [
+      {
+        "reference": "EL4413",
+        "creationDateTime": "2025-03-27T05:28:04.948801",
+        "originSystemCode": "AMADEUS",
+        "flightOfferId": 9
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "documentType": "TICKET",
+            "number": "0003362099589",
+            "validityCountry": "US"
+          }
+        ]
+      }
+    ],
+    "flightOffers": [
+      {
+        "id": 9,
+        "price": "168.02 USD",
+        "segments": [
+          {
+            "carrier": "ALASKA AIRLINES",
+            "flight_number": "AS3",
+            "from": "DCA Terminal 2",
+            "to": "SEA",
+            "departure_time": "2025-05-01T17:30:00",
+            "arrival_time": "2025-05-01T20:15:00",
+            "duration": "5h 45m",
+            "aircraft": "BOEING 737-800 (WINGLETS)"
+          },
+          {
+            "carrier": "ALASKA AIRLINES",
+            "flight_number": "AS1112",
+            "from": "SEA",
+            "to": "SFO Terminal 1",
+            "departure_time": "2025-05-01T20:55:00",
+            "arrival_time": "2025-05-01T23:13:00",
+            "duration": "2h 18m",
+            "aircraft": "BOEING 737-900"
+          }
+        ],
+        "cabin": "ECONOMY",
+        "total_price": "168.02 USD"
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}

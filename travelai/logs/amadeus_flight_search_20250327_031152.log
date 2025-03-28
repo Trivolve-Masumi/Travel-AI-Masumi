@@ -1,0 +1,17 @@
+2025-03-27 03:16:41,643 | amadeus_flight_search | INFO | Flight search: WAS to NYC on 2025-05-01
+2025-03-27 03:16:41,645 | amadeus_flight_search | INFO | Getting Amadeus API access token
+2025-03-27 03:16:42,459 | amadeus_flight_search | INFO | Got access token: XRrthc0GFI...
+2025-03-27 03:16:42,460 | amadeus_flight_search | INFO | Request parameters: {
+  "originLocationCode": "WAS",
+  "destinationLocationCode": "NYC",
+  "departureDate": "2025-05-01",
+  "adults": 1,
+  "max": null,
+  "travelClass": "ECONOMY"
+}
+2025-03-27 03:16:42,460 | amadeus_flight_search | INFO | Sending request to https://test.api.amadeus.com/v2/shopping/flight-offers
+2025-03-27 03:16:46,612 | amadeus_flight_search | INFO | API response received in 4.15 seconds
+2025-03-27 03:16:46,612 | amadeus_flight_search | INFO | Response status code: 200
+2025-03-27 03:16:46,659 | amadeus_flight_search | INFO | Raw API response saved to api_responses/search_WAS_NYC_20250327_031646.txt
+2025-03-27 03:16:46,679 | amadeus_flight_search | INFO | Structured API response saved to api_responses/search_WAS_NYC_20250327_031646.json
+2025-03-27 03:16:46,680 | amadeus_flight_search | INFO | Found 41 flights

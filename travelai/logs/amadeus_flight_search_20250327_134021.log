@@ -1,0 +1,17 @@
+2025-03-27 13:41:22,634 | amadeus_flight_search | INFO | Flight search: WAS to SFO on 2025-05-11
+2025-03-27 13:41:22,634 | amadeus_flight_search | INFO | Getting Amadeus API access token
+2025-03-27 13:41:23,735 | amadeus_flight_search | INFO | Got access token: drZN3AUAvZ...
+2025-03-27 13:41:23,735 | amadeus_flight_search | INFO | Request parameters: {
+  "originLocationCode": "WAS",
+  "destinationLocationCode": "SFO",
+  "departureDate": "2025-05-11",
+  "adults": 1,
+  "max": null,
+  "travelClass": "ECONOMY"
+}
+2025-03-27 13:41:23,735 | amadeus_flight_search | INFO | Sending request to https://test.api.amadeus.com/v2/shopping/flight-offers
+2025-03-27 13:41:27,830 | amadeus_flight_search | INFO | API response received in 4.09 seconds
+2025-03-27 13:41:27,830 | amadeus_flight_search | INFO | Response status code: 200
+2025-03-27 13:41:27,936 | amadeus_flight_search | INFO | Raw API response saved to api_responses/search_WAS_SFO_20250327_134127.txt
+2025-03-27 13:41:27,953 | amadeus_flight_search | INFO | Structured API response saved to api_responses/search_WAS_SFO_20250327_134127.json
+2025-03-27 13:41:27,954 | amadeus_flight_search | INFO | Found 84 flights

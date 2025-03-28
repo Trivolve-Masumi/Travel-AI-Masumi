@@ -1,0 +1,6 @@
+2025-03-27 03:11:52,554 | travelai_main | INFO | Starting TravelAI Flight Assistant
+2025-03-27 03:11:52,555 | travelai_main | INFO | Loaded environment variables from .env file
+2025-03-27 03:11:52,556 | travelai_main | INFO | ReportLab is installed. PDF generation is enabled.
+2025-03-27 03:11:52,556 | travelai_main | INFO | Current date: 2025-03-27
+2025-03-27 03:11:52,556 | travelai_main | INFO | Initializing TravelAI crew...
+2025-03-27 03:11:52,719 | travelai_main | INFO | Starting conversation with travel agent...

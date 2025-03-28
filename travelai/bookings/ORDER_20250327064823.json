@@ -1,0 +1,71 @@
+{
+  "data": {
+    "type": "flight-order",
+    "id": "ORDER_20250327064823",
+    "queuingOfficeId": "AMADEUS",
+    "associatedRecords": [
+      {
+        "reference": "CGZMZI",
+        "creationDateTime": "2025-03-27T06:48:23.529220",
+        "originSystemCode": "AMADEUS",
+        "flightOfferId": "3"
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "documentType": "TICKET",
+            "number": "0167973032722",
+            "validityCountry": "US"
+          }
+        ]
+      }
+    ],
+    "flightOffers": [
+      {
+        "id": "3",
+        "price": "208.50 USD",
+        "carrier": "UNITED AIRLINES",
+        "flight_number": "UA1095",
+        "departure": {
+          "airport": "IAD",
+          "terminal": "",
+          "datetime": "2025-05-11T06:30:00"
+        },
+        "arrival": {
+          "airport": "SFO",
+          "terminal": "3",
+          "datetime": "2025-05-11T09:35:00"
+        },
+        "duration": "6h 5m",
+        "aircraft": "BOEING 737 MAX 9",
+        "baggage": {
+          "checked": 0
+        },
+        "cabin": "ECONOMY"
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}

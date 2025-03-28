@@ -1,0 +1,6 @@
+2025-03-27 02:39:01,802 | travelai_main | INFO | Starting TravelAI Flight Assistant
+2025-03-27 02:39:01,803 | travelai_main | INFO | Loaded environment variables from .env file
+2025-03-27 02:39:01,803 | travelai_main | INFO | ReportLab is installed. PDF generation is enabled.
+2025-03-27 02:39:01,803 | travelai_main | INFO | Current date: 2025-03-27
+2025-03-27 02:39:01,803 | travelai_main | INFO | Initializing TravelAI crew...
+2025-03-27 02:39:01,806 | travelai_main | ERROR | Error initializing TravelAI crew: "AmadeusFlightSearchTool" object has no field "logger"

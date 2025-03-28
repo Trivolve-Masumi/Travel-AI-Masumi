@@ -1,0 +1,7 @@
+2025-03-27 13:36:29,798 | travelai_crew | INFO | Successfully reset agent memories for a fresh conversation.
+2025-03-27 13:36:29,798 | travelai_crew | INFO | Current date: 2025-03-27
+2025-03-27 13:36:29,798 | travelai_crew | INFO | Found API Key: lqfU3...
+2025-03-27 13:36:30,762 | travelai_crew | INFO | Successfully obtained API token: OGSmIzfVjG...
+2025-03-27 13:36:31,726 | travelai_crew | INFO | API connection test successful
+2025-03-27 13:36:31,728 | travelai_crew | INFO | API credentials verified and connection tested successfully
+2025-03-27 13:37:40,127 | travelai_crew | INFO | Travel agent conversation completed.

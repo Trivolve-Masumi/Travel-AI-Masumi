@@ -1,0 +1,36 @@
+2025-03-27 06:43:45,558 | amadeus_flight_search | INFO | Flight search: WAS to SFO on 2025-05-01
+2025-03-27 06:43:45,558 | amadeus_flight_search | INFO | Getting Amadeus API access token
+2025-03-27 06:43:46,328 | amadeus_flight_search | INFO | Got access token: hyvicG4Pbg...
+2025-03-27 06:43:46,328 | amadeus_flight_search | INFO | Request parameters: {
+  "originLocationCode": "WAS",
+  "destinationLocationCode": "SFO",
+  "departureDate": "2025-05-01",
+  "adults": 1,
+  "max": 3,
+  "travelClass": "ECONOMY",
+  "currencyCode": "USD"
+}
+2025-03-27 06:43:46,328 | amadeus_flight_search | INFO | Sending request to https://test.api.amadeus.com/v2/shopping/flight-offers
+2025-03-27 06:43:50,081 | amadeus_flight_search | INFO | API response received in 3.75 seconds
+2025-03-27 06:43:50,082 | amadeus_flight_search | INFO | Response status code: 200
+2025-03-27 06:43:50,090 | amadeus_flight_search | INFO | Raw API response saved to api_responses/search_WAS_SFO_20250327_064350.txt
+2025-03-27 06:43:50,092 | amadeus_flight_search | INFO | Structured API response saved to api_responses/search_WAS_SFO_20250327_064350.json
+2025-03-27 06:43:50,092 | amadeus_flight_search | INFO | Found 3 flights
+2025-03-27 06:46:09,699 | amadeus_flight_search | INFO | Flight search: WAS to SFO on 2025-05-11
+2025-03-27 06:46:09,700 | amadeus_flight_search | INFO | Getting Amadeus API access token
+2025-03-27 06:46:10,561 | amadeus_flight_search | INFO | Got access token: YQ7joqNJBG...
+2025-03-27 06:46:10,562 | amadeus_flight_search | INFO | Request parameters: {
+  "originLocationCode": "WAS",
+  "destinationLocationCode": "SFO",
+  "departureDate": "2025-05-11",
+  "adults": 1,
+  "max": 3,
+  "travelClass": "ECONOMY",
+  "currencyCode": "USD"
+}
+2025-03-27 06:46:10,562 | amadeus_flight_search | INFO | Sending request to https://test.api.amadeus.com/v2/shopping/flight-offers
+2025-03-27 06:46:14,781 | amadeus_flight_search | INFO | API response received in 4.22 seconds
+2025-03-27 06:46:14,782 | amadeus_flight_search | INFO | Response status code: 200
+2025-03-27 06:46:14,792 | amadeus_flight_search | INFO | Raw API response saved to api_responses/search_WAS_SFO_20250327_064614.txt
+2025-03-27 06:46:14,797 | amadeus_flight_search | INFO | Structured API response saved to api_responses/search_WAS_SFO_20250327_064614.json
+2025-03-27 06:46:14,797 | amadeus_flight_search | INFO | Found 3 flights

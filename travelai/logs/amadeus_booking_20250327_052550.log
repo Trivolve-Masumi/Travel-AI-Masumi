@@ -1,0 +1,138 @@
+2025-03-27 05:27:54,726 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 05:27:54,739 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 05:27:54,741 | amadeus_booking | ERROR | Missing traveler information: first_name, last_name
+2025-03-27 05:28:02,543 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 05:28:02,560 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 05:28:02,568 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 05:28:03,623 | amadeus_booking | INFO | Got access token: 3LUhPi9U3m...
+2025-03-27 05:28:03,685 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 05:28:03,685 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 05:28:03,749 | amadeus_booking | INFO | Created flight offer with carrier: , flight: , from:  to: 
+2025-03-27 05:28:03,839 | amadeus_booking | INFO | Booking payload: {
+  "data": {
+    "type": "flight-order",
+    "flightOffers": [
+      {
+        "type": "flight-offer",
+        "id": "1",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "lastTicketingDate": "2025-05-01",
+        "itineraries": [
+          {
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "",
+                  "terminal": "",
+                  "at": "2025-05-01T00:00:00"
+                },
+                "arrival": {
+                  "iataCode": "",
+                  "terminal": "",
+                  "at": "2025-05-01T01:00:00"
+                },
+                "carrierCode": "",
+                "number": "",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": ""
+                },
+                "duration": "PT2H",
+                "id": "1",
+                "numberOfStops": 0
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "USD",
+          "total": "168.02 USD",
+          "base": "168.02 USD",
+          "grandTotal": "168.02 USD"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": false
+        },
+        "validatingAirlineCodes": [
+          ""
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "USD",
+              "total": "168.02 USD",
+              "base": "168.02 USD"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "1",
+                "cabin": "ECONOMY",
+                "fareBasis": "YFFBR",
+                "class": "Y",
+                "includedCheckedBags": {
+                  "quantity": 0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        }
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}
+2025-03-27 05:28:03,846 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 05:28:04,897 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 05:28:04,915 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_052804.txt
+2025-03-27 05:28:04,917 | amadeus_booking | ERROR | API errors: Booking failed: This attribute should be a number (Code: 477, Path: /data/flightOffers[0]/travelerPricings[0]/price/base); This attribute should be a number (Code: 477, Path: /data/flightOffers[0]/travelerPricings[0]/price/total); This attribute should be a number (Code: 477, Path: /data/flightOffers[0]/price/grandTotal); carrier code is a 2 or 3 alphanum except 'YY' and 'YYY' (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/operating/carrierCode); This attribute should be a number (Code: 477, Path: /data/flightOffers[0]/price/total); departure iataCode must be a 3-letter code (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/departure/iataCode); validatingAirlineCode is a 2 alphanum except 'YY' (Code: 477, Path: /data/flightOffers[0]/validatingAirlineCodes[0]); arrival iataCode must be a 3-letter code (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/arrival/iataCode); carrier code is a 2 or 3 alphanum except 'YY' and 'YYY' (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/carrierCode); This attribute should be a number (Code: 477, Path: /data/flightOffers[0]/price/base)
+2025-03-27 05:28:04,919 | amadeus_booking | INFO | Creating mock booking
+2025-03-27 05:28:04,946 | amadeus_booking | WARNING | Could not determine carrier from flight offer: {'id': 9, 'price': '168.02 USD', 'segments': [{'carrier': 'ALASKA AIRLINES', 'flight_number': 'AS3', 'from': 'DCA Terminal 2', 'to': 'SEA', 'departure_time': '2025-05-01T17:30:00', 'arrival_time': '2025-05-01T20:15:00', 'duration': '5h 45m', 'aircraft': 'BOEING 737-800 (WINGLETS)'}, {'carrier': 'ALASKA AIRLINES', 'flight_number': 'AS1112', 'from': 'SEA', 'to': 'SFO Terminal 1', 'departure_time': '2025-05-01T20:55:00', 'arrival_time': '2025-05-01T23:13:00', 'duration': '2h 18m', 'aircraft': 'BOEING 737-900'}], 'cabin': 'ECONOMY', 'total_price': '168.02 USD'}
+2025-03-27 05:28:04,950 | amadeus_booking | INFO | Saved mock booking data to bookings/ORDER_CCYY41_20250327_052804.json
+2025-03-27 05:28:04,953 | amadeus_booking | ERROR | Error generating e-ticket PDF: name 'flight_offer' is not defined
+2025-03-27 05:28:04,992 | amadeus_booking | ERROR | Traceback (most recent call last):
+  File "/Users/skep/Documents/Masumi Node/Agents/TravelAI/travelai/src/travelai/tools/mock_booking_handler.py", line 313, in generate_eticket_pdf
+    primary_carrier = self._extract_primary_carrier(flight_offer)
+NameError: name 'flight_offer' is not defined
+
+2025-03-27 05:28:04,996 | amadeus_booking | ERROR | Error generating e-ticket PDF: name 'flight_offer' is not defined
+2025-03-27 05:28:05,001 | amadeus_booking | ERROR | Traceback (most recent call last):
+  File "/Users/skep/Documents/Masumi Node/Agents/TravelAI/travelai/src/travelai/tools/mock_booking_handler.py", line 313, in generate_eticket_pdf
+    primary_carrier = self._extract_primary_carrier(flight_offer)
+NameError: name 'flight_offer' is not defined
+

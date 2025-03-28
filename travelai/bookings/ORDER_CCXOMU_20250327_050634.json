@@ -1,0 +1,54 @@
+{
+  "data": {
+    "type": "flight-order",
+    "id": "ORDER_CCXOMU_20250327_050634",
+    "queuingOfficeId": "AMADEUS",
+    "associatedRecords": [
+      {
+        "reference": "NK5631",
+        "creationDateTime": "2025-03-27T05:06:34.259323",
+        "originSystemCode": "AMADEUS",
+        "flightOfferId": "5"
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "documentType": "TICKET",
+            "number": "0011410351009",
+            "validityCountry": "US"
+          }
+        ]
+      }
+    ],
+    "flightOffers": [
+      {
+        "id": "5",
+        "price": "155.27 EUR",
+        "details": "1 stop flight with ALASKA AIRLINES AS214 from IAD departing at Thu, May 01, 07:00 to LAX and connecting with ALASKA AIRLINES AS3342 from LAX departing at Thu, May 01, 11:00 arriving at SFO Terminal 1 at Thu, May 01, 12:27"
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}

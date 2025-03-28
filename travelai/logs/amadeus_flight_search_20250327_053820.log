@@ -1,0 +1,34 @@
+2025-03-27 05:38:42,140 | amadeus_flight_search | INFO | Flight search: WAS to SFO on 2025-05-01
+2025-03-27 05:38:42,140 | amadeus_flight_search | INFO | Getting Amadeus API access token
+2025-03-27 05:38:42,891 | amadeus_flight_search | INFO | Got access token: sNvUNwpO1z...
+2025-03-27 05:38:42,892 | amadeus_flight_search | INFO | Request parameters: {
+  "originLocationCode": "WAS",
+  "destinationLocationCode": "SFO",
+  "departureDate": "2025-05-01",
+  "adults": 1,
+  "max": 10,
+  "travelClass": "ECONOMY"
+}
+2025-03-27 05:38:42,893 | amadeus_flight_search | INFO | Sending request to https://test.api.amadeus.com/v2/shopping/flight-offers
+2025-03-27 05:38:48,257 | amadeus_flight_search | INFO | API response received in 5.36 seconds
+2025-03-27 05:38:48,258 | amadeus_flight_search | INFO | Response status code: 200
+2025-03-27 05:38:48,280 | amadeus_flight_search | INFO | Raw API response saved to api_responses/search_WAS_SFO_20250327_053848.txt
+2025-03-27 05:38:48,284 | amadeus_flight_search | INFO | Structured API response saved to api_responses/search_WAS_SFO_20250327_053848.json
+2025-03-27 05:38:48,284 | amadeus_flight_search | INFO | Found 10 flights
+2025-03-27 05:39:30,148 | amadeus_flight_search | INFO | Flight search: WAS to SFO on 2025-05-10
+2025-03-27 05:39:30,149 | amadeus_flight_search | INFO | Getting Amadeus API access token
+2025-03-27 05:39:30,856 | amadeus_flight_search | INFO | Got access token: Uvq1NQEvLa...
+2025-03-27 05:39:30,857 | amadeus_flight_search | INFO | Request parameters: {
+  "originLocationCode": "WAS",
+  "destinationLocationCode": "SFO",
+  "departureDate": "2025-05-10",
+  "adults": 1,
+  "max": 10,
+  "travelClass": "ECONOMY"
+}
+2025-03-27 05:39:30,857 | amadeus_flight_search | INFO | Sending request to https://test.api.amadeus.com/v2/shopping/flight-offers
+2025-03-27 05:39:35,204 | amadeus_flight_search | INFO | API response received in 4.35 seconds
+2025-03-27 05:39:35,204 | amadeus_flight_search | INFO | Response status code: 200
+2025-03-27 05:39:35,229 | amadeus_flight_search | INFO | Raw API response saved to api_responses/search_WAS_SFO_20250327_053935.txt
+2025-03-27 05:39:35,247 | amadeus_flight_search | INFO | Structured API response saved to api_responses/search_WAS_SFO_20250327_053935.json
+2025-03-27 05:39:35,247 | amadeus_flight_search | INFO | Found 10 flights

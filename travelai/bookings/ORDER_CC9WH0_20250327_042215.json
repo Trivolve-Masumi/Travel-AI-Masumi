@@ -1,0 +1,61 @@
+{
+  "data": {
+    "type": "flight-order",
+    "id": "ORDER_CC9WH0_20250327_042215",
+    "queuingOfficeId": "MOCKTAI",
+    "associatedRecords": [
+      {
+        "reference": "OX7665",
+        "creationDateTime": "2025-03-27T04:22:15.826916",
+        "originSystemCode": "MOCK",
+        "flightOfferId": "3"
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "documentType": "TICKET",
+            "number": "0271965721888",
+            "validityCountry": "US"
+          }
+        ]
+      }
+    ],
+    "flightOffers": [
+      {
+        "id": "3",
+        "price": "158.32",
+        "carrier": "ALASKA AIRLINES",
+        "flight_number": "AS435",
+        "origin": "IAD",
+        "departure_time": "2025-05-01T19:55",
+        "destination": "SFO Terminal 1",
+        "arrival_time": "2025-05-01T23:10",
+        "aircraft": "BOEING 737-900"
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  },
+  "_mock": true
+}

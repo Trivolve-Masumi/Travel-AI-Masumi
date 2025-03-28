@@ -1,0 +1,6 @@
+URL: https://test.api.amadeus.com/v1/booking/flight-orders
+Status: 400
+Headers: {'Date': 'Wed, 26 Mar 2025 22:52:13 GMT', 'Content-Type': 'application/vnd.amadeus+json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Ama-Internal-Message-Version': '14.1', 'Ama-Request-Id': '0001OROEFTR671', 'Content-Encoding': 'gzip', 'Ama-Gateway-Request-Id': 'rrt-0b2aefcbf75dd43b0-a-de-1701648-226483382-1', 'Access-Control-Allow-Headers': 'origin, x-requested-with, accept, Content-Type, Authorization', 'Access-Control-Max-Age': '3628800', 'Access-Control-Allow-Methods': '*', 'Server': 'Amadeus', 'Access-Control-Allow-Origin': '*'}
+
+Body:
+{"errors":[{"status":400,"code":477,"title":"INVALID FORMAT","detail":"departure iataCode must be a 3-letter code","source":{"pointer":"/data/flightOffers[0]/itineraries[0]/segments[0]/departure/iataCode","example":"ORY"}},{"status":400,"code":477,"title":"INVALID FORMAT","detail":"arrival iataCode must be a 3-letter code","source":{"pointer":"/data/flightOffers[0]/itineraries[0]/segments[0]/arrival/iataCode","example":"ORY"}}]}

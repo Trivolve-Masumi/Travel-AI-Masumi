@@ -1,0 +1,6 @@
+URL: https://test.api.amadeus.com/v1/booking/flight-orders
+Status: 400
+Headers: {'Date': 'Wed, 26 Mar 2025 21:49:17 GMT', 'Content-Type': 'application/vnd.amadeus+json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Ama-Internal-Message-Version': '14.1', 'Ama-Request-Id': '0001BUMXLTR3A4', 'Content-Encoding': 'gzip', 'Ama-Gateway-Request-Id': 'rrt-094bdb430ae5ece8d-c-eu-3276921-84213759-1', 'Access-Control-Allow-Headers': 'origin, x-requested-with, accept, Content-Type, Authorization', 'Access-Control-Max-Age': '3628800', 'Access-Control-Allow-Methods': '*', 'Server': 'Amadeus', 'Access-Control-Allow-Origin': '*'}
+
+Body:
+{"errors":[{"status":400,"code":34651,"title":"SEGMENT SELL FAILURE","detail":"Itinerary schedule change detected between segments requested and actual segment sell is exceeding 15 minutes"}]}

@@ -1,0 +1,266 @@
+2025-03-27 03:18:31,784 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:18:31,785 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:18:31,786 | amadeus_booking | ERROR | Missing traveler information: first_name, last_name, phone
+2025-03-27 03:18:38,093 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:18:38,093 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:18:38,093 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 03:18:38,782 | amadeus_booking | INFO | Got access token: Oea675FRBs...
+2025-03-27 03:18:38,784 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 03:18:38,785 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 03:18:38,793 | amadeus_booking | ERROR | Failed to process flight offer: 'str' object has no attribute 'get'
+2025-03-27 03:18:51,960 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:18:51,961 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:18:51,961 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 03:18:52,687 | amadeus_booking | INFO | Got access token: c8YAwgI9Zz...
+2025-03-27 03:18:52,688 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 03:18:52,688 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 03:18:52,688 | amadeus_booking | ERROR | Failed to process flight offer: 'float' object has no attribute 'split'
+2025-03-27 03:19:03,296 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:19:03,299 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:19:03,299 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 03:19:03,987 | amadeus_booking | INFO | Got access token: g1V8eXcfPR...
+2025-03-27 03:19:03,988 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 03:19:03,988 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 03:19:03,990 | amadeus_booking | ERROR | Failed to process flight offer: 'str' object has no attribute 'get'
+2025-03-27 03:19:14,415 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:19:14,416 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:19:14,416 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 03:19:15,306 | amadeus_booking | INFO | Got access token: DbIS6dl6mB...
+2025-03-27 03:19:15,307 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 03:19:15,307 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 03:19:15,309 | amadeus_booking | INFO | Created flight offer with carrier: UA, flight: 4167, from: DCA to: EWR
+2025-03-27 03:19:15,310 | amadeus_booking | INFO | Booking payload: {
+  "data": {
+    "type": "flight-order",
+    "flightOffers": [
+      {
+        "type": "flight-offer",
+        "id": "1",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "lastTicketingDate": "2025-05-01",
+        "itineraries": [
+          {
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "DCA",
+                  "terminal": "",
+                  "at": "2025-05-01T00:00:00"
+                },
+                "arrival": {
+                  "iataCode": "EWR",
+                  "terminal": "",
+                  "at": "2025-05-01T01:20:00"
+                },
+                "carrierCode": "UA",
+                "number": "4167",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "UA"
+                },
+                "duration": "PT2H",
+                "id": "1",
+                "numberOfStops": 0
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "EUR",
+          "total": "78.60",
+          "base": "0.00",
+          "grandTotal": "78.60"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": false
+        },
+        "validatingAirlineCodes": [
+          "UA"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "EUR",
+              "total": "78.60",
+              "base": "0.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "1",
+                "cabin": "ECONOMY",
+                "fareBasis": "YFFBR",
+                "class": "Y",
+                "includedCheckedBags": {
+                  "quantity": 0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        }
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}
+2025-03-27 03:19:15,310 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 03:19:17,263 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 03:19:17,267 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_031917.txt
+2025-03-27 03:19:17,268 | amadeus_booking | ERROR | API errors: Booking failed: Itinerary schedule change detected between segments requested and actual segment sell is exceeding 15 minutes (Code: 34651, Path: )
+2025-03-27 03:23:49,741 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:23:49,744 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:23:49,744 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 03:23:50,992 | amadeus_booking | INFO | Got access token: wTMMTvS5AA...
+2025-03-27 03:23:50,993 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 03:23:50,993 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 03:23:50,997 | amadeus_booking | INFO | Created flight offer with carrier: UA, flight: 6036, from: IAD to: LGA
+2025-03-27 03:23:50,998 | amadeus_booking | INFO | Booking payload: {
+  "data": {
+    "type": "flight-order",
+    "flightOffers": [
+      {
+        "type": "flight-offer",
+        "id": "1",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "lastTicketingDate": "2025-05-01",
+        "itineraries": [
+          {
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "IAD",
+                  "terminal": "",
+                  "at": "2025-05-01T00:00:00"
+                },
+                "arrival": {
+                  "iataCode": "LGA",
+                  "terminal": "",
+                  "at": "2025-05-01T01:20:00"
+                },
+                "carrierCode": "UA",
+                "number": "6036",
+                "aircraft": {
+                  "code": "320"
+                },
+                "operating": {
+                  "carrierCode": "UA"
+                },
+                "duration": "PT2H",
+                "id": "1",
+                "numberOfStops": 0
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "EUR",
+          "total": "78.60",
+          "base": "0.00",
+          "grandTotal": "78.60"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": false
+        },
+        "validatingAirlineCodes": [
+          "UA"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "EUR",
+              "total": "78.60",
+              "base": "0.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "1",
+                "cabin": "ECONOMY",
+                "fareBasis": "YFFBR",
+                "class": "Y",
+                "includedCheckedBags": {
+                  "quantity": 0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        }
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}
+2025-03-27 03:23:50,998 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 03:23:53,044 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 03:23:53,048 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_032353.txt
+2025-03-27 03:23:53,049 | amadeus_booking | ERROR | API errors: Booking failed: Itinerary schedule change detected between segments requested and actual segment sell is exceeding 15 minutes (Code: 34651, Path: )

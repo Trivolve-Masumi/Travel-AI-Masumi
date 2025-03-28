@@ -1,0 +1,6 @@
+URL: https://test.api.amadeus.com/v1/booking/flight-orders
+Status: 400
+Headers: {'Date': 'Wed, 26 Mar 2025 22:14:32 GMT', 'Content-Type': 'application/vnd.amadeus+json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Ama-Internal-Message-Version': '14.1', 'Ama-Request-Id': '0001BUZHNTR4G7', 'Content-Encoding': 'gzip', 'Ama-Gateway-Request-Id': 'rrt-00adf764c7c0868d4-a-de-2033452-224275980-1', 'Access-Control-Allow-Headers': 'origin, x-requested-with, accept, Content-Type, Authorization', 'Access-Control-Max-Age': '3628800', 'Access-Control-Allow-Methods': '*', 'Server': 'Amadeus', 'Access-Control-Allow-Origin': '*'}
+
+Body:
+{"errors":[{"status":400,"code":34651,"title":"SEGMENT SELL FAILURE","detail":"Could not sell segment 1","source":{"pointer":"/data/flightOffers[0]/itineraries[0]/segments[0]"}}]}

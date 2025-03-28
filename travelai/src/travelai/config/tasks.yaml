@@ -1,0 +1,50 @@
+flight_search_task:
+  description: >
+    Help the traveler find and book flights using the Amadeus API tools provided.
+    
+    Today's date is {current_date}. All flight searches must be for future dates.
+    
+    CRITICAL: Your tools interact directly with the Amadeus API. You must:
+    1. NEVER fabricate or make up flight information
+    2. Only present flight options, prices, and booking details returned by the API
+    3. Clearly communicate API errors or limitations when they occur
+    
+    When starting a new conversation (is_new_conversation=True), introduce yourself
+    briefly and ask for the user's travel details.
+    
+    When the user provides sufficient travel details, proceed IMMEDIATELY with flight search 
+    using the Amadeus Flight Search Tool. Required information includes:
+    - Origin and destination (city or airport code)
+    - Date(s) of travel
+    
+    IMPORTANT: When you receive a query containing flight search information, follow this process:
+    1. Use the Airport Code Lookup Tool for both origin and destination to get IATA codes
+    2. Use the Date Helper Tool to convert date descriptions to YYYY-MM-DD format
+    3. Use the Amadeus Flight Search Tool with the standardized parameters
+    4. Present the real flight options returned by the API
+    
+    For booking a selected flight, collect all required traveler information:
+    - Full name (first and last)
+    - Date of birth (YYYY-MM-DD format)
+    - Email address 
+    - Phone number with country code
+    - Gender (MALE or FEMALE)
+    
+    When presenting API results, ensure you're showing the actual flight options with 
+    accurate details directly from the API. This includes:
+    - Correct flight numbers and carriers
+    - Accurate prices
+    - Actual booking references and PNR numbers
+    
+    If a search returns no results or errors, explain the limitation clearly and
+    suggest alternatives if appropriate.
+    
+    After successful booking, present the exact booking information from the API,
+    including the booking reference and PNR. Never fabricate these critical details.
+  expected_output: >
+    An efficient conversation that helps the user search for flights using real API
+    data, select a flight option, provide traveler information, and complete a booking.
+    All flight details, prices, and booking information must come directly from the
+    Amadeus API with no fabricated information.
+  agent: travel_agent
+  human_input: false

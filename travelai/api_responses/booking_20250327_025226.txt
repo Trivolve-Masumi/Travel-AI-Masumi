@@ -1,0 +1,6 @@
+URL: https://test.api.amadeus.com/v1/booking/flight-orders
+Status: 400
+Headers: {'Date': 'Wed, 26 Mar 2025 21:22:26 GMT', 'Content-Type': 'application/vnd.amadeus+json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Ama-Internal-Message-Version': '14.1', 'Ama-Request-Id': '0001OQG8KTR21E', 'Content-Encoding': 'gzip', 'Ama-Gateway-Request-Id': 'rrt-0eb1d7ad2c26b4997-b-de-1157242-223759378-1', 'Access-Control-Allow-Headers': 'origin, x-requested-with, accept, Content-Type, Authorization', 'Access-Control-Max-Age': '3628800', 'Access-Control-Allow-Methods': '*', 'Server': 'Amadeus', 'Access-Control-Allow-Origin': '*'}
+
+Body:
+{"errors":[{"status":400,"code":32171,"title":"MANDATORY DATA MISSING","detail":"validatingAirlineCodes needed","source":{"pointer":"/data/flightOffers[0]/validatingAirlineCodes","example":"AF"}},{"status":400,"code":32171,"title":"MANDATORY DATA MISSING","detail":"itineraries needed","source":{"pointer":"/data/flightOffers[0]/itineraries"}},{"status":400,"code":32171,"title":"MANDATORY DATA MISSING","detail":"travelerPricings needed","source":{"pointer":"/data/flightOffers[0]/travelerPricings"}}]}

@@ -1,0 +1,424 @@
+{
+  "meta": {
+    "count": 3,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=WAS&destinationLocationCode=SFO&departureDate=2025-05-01&adults=1&max=3&travelClass=ECONOMY&currencyCode=USD"
+    }
+  },
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-27",
+      "lastTicketingDateTime": "2025-03-27",
+      "numberOfBookableSeats": 3,
+      "itineraries": [
+        {
+          "duration": "PT6H6M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "DCA",
+                "terminal": "2",
+                "at": "2025-05-01T17:55:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "1",
+                "at": "2025-05-01T21:01:00"
+              },
+              "carrierCode": "AS",
+              "number": "7",
+              "aircraft": {
+                "code": "73H"
+              },
+              "operating": {
+                "carrierCode": "AS"
+              },
+              "duration": "PT6H6M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "158.32",
+        "base": "133.02",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "158.32"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "AS"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "158.32",
+            "base": "133.02"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "QH2OAVBN",
+              "brandedFare": "SV",
+              "brandedFareLabel": "SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "STANDARD PIECE MAX 50LB 62LI",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL 1",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "110V AC POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-27",
+      "lastTicketingDateTime": "2025-03-27",
+      "numberOfBookableSeats": 3,
+      "itineraries": [
+        {
+          "duration": "PT6H15M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "IAD",
+                "at": "2025-05-01T07:00:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "1",
+                "at": "2025-05-01T10:15:00"
+              },
+              "carrierCode": "AS",
+              "number": "727",
+              "aircraft": {
+                "code": "73J"
+              },
+              "operating": {
+                "carrierCode": "AS"
+              },
+              "duration": "PT6H15M",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "158.32",
+        "base": "133.02",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "158.32"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "AS"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "158.32",
+            "base": "133.02"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "QH2OAVBN",
+              "brandedFare": "SV",
+              "brandedFareLabel": "SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "STANDARD PIECE MAX 50LB 62LI",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL 1",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "110V AC POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-27",
+      "lastTicketingDateTime": "2025-03-27",
+      "numberOfBookableSeats": 3,
+      "itineraries": [
+        {
+          "duration": "PT6H15M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "IAD",
+                "at": "2025-05-01T19:55:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "1",
+                "at": "2025-05-01T23:10:00"
+              },
+              "carrierCode": "AS",
+              "number": "435",
+              "aircraft": {
+                "code": "73J"
+              },
+              "operating": {
+                "carrierCode": "AS"
+              },
+              "duration": "PT6H15M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "158.32",
+        "base": "133.02",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "158.32"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "AS"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "158.32",
+            "base": "133.02"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "QH2OAVBN",
+              "brandedFare": "SV",
+              "brandedFareLabel": "SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "STANDARD PIECE MAX 50LB 62LI",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL 1",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "110V AC POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dictionaries": {
+    "locations": {
+      "DCA": {
+        "cityCode": "WAS",
+        "countryCode": "US"
+      },
+      "IAD": {
+        "cityCode": "WAS",
+        "countryCode": "US"
+      },
+      "SFO": {
+        "cityCode": "SFO",
+        "countryCode": "US"
+      }
+    },
+    "aircraft": {
+      "73H": "BOEING 737-800 (WINGLETS)",
+      "73J": "BOEING 737-900"
+    },
+    "currencies": {
+      "USD": "US DOLLAR"
+    },
+    "carriers": {
+      "AS": "ALASKA AIRLINES"
+    }
+  }
+}

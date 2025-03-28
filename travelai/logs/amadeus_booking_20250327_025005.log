@@ -1,0 +1,88 @@
+2025-03-27 02:51:28,310 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:51:28,311 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:51:28,311 | amadeus_booking | ERROR | Missing traveler information: first_name, last_name
+2025-03-27 02:51:39,929 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:51:39,929 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:51:39,929 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:51:41,060 | amadeus_booking | INFO | Got access token: z7Pdp8fAA2...
+2025-03-27 02:51:41,061 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 02:51:42,102 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 02:51:42,105 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_025142.txt
+2025-03-27 02:51:42,105 | amadeus_booking | ERROR | API error 477: Booking failed: This attribute should be a number
+2025-03-27 02:51:49,396 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:51:49,397 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:51:49,397 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:51:50,134 | amadeus_booking | INFO | Got access token: xRb2M9RTAQ...
+2025-03-27 02:51:50,135 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:51:50,135 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:51:50,136 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:51:50,856 | amadeus_booking | INFO | Got access token: dYtH7rskOG...
+2025-03-27 02:51:50,865 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:51:50,865 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:51:50,865 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:51:51,542 | amadeus_booking | INFO | Got access token: hSKYq2wA70...
+2025-03-27 02:51:51,543 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:51:51,543 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:51:51,543 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:51:52,295 | amadeus_booking | INFO | Got access token: 9HbwyedNGI...
+2025-03-27 02:51:52,299 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:51:52,300 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:51:52,300 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:51:53,054 | amadeus_booking | INFO | Got access token: NfU7eETOVw...
+2025-03-27 02:51:53,055 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:51:53,055 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:51:53,055 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:51:53,814 | amadeus_booking | INFO | Got access token: aXj7xQEO9p...
+2025-03-27 02:52:24,507 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:52:24,508 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:52:24,508 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:52:25,305 | amadeus_booking | INFO | Got access token: xFwoXtgCBs...
+2025-03-27 02:52:25,306 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 02:52:26,277 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 02:52:26,280 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_025226.txt
+2025-03-27 02:52:26,281 | amadeus_booking | ERROR | API error 32171: Booking failed: validatingAirlineCodes needed
+2025-03-27 02:53:34,771 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:53:34,772 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:53:34,772 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:53:35,619 | amadeus_booking | INFO | Got access token: DhEveGrpPK...
+2025-03-27 02:53:35,620 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 02:53:36,641 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 02:53:36,643 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_025336.txt
+2025-03-27 02:53:36,644 | amadeus_booking | ERROR | API error 32171: Booking failed: validatingAirlineCodes needed
+2025-03-27 02:53:44,059 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:53:44,060 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:53:44,060 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:53:44,773 | amadeus_booking | INFO | Got access token: kPXx0nv1hs...
+2025-03-27 02:53:44,774 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 02:53:45,835 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 02:53:45,837 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_025345.txt
+2025-03-27 02:53:45,837 | amadeus_booking | ERROR | API error 32171: Booking failed: itineraries needed
+2025-03-27 02:54:03,166 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:54:03,166 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:54:03,166 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:54:03,906 | amadeus_booking | INFO | Got access token: EQMn9Y5WpA...
+2025-03-27 02:54:03,907 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 02:54:04,962 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 02:54:04,965 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_025404.txt
+2025-03-27 02:54:04,965 | amadeus_booking | ERROR | API error 32171: Booking failed: id needed
+2025-03-27 02:54:19,218 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 02:54:19,218 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 02:54:19,218 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 02:54:19,917 | amadeus_booking | INFO | Got access token: 5Mv3YYGxrX...
+2025-03-27 02:54:19,918 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 02:54:21,059 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 02:54:21,061 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_025421.txt
+2025-03-27 02:54:21,062 | amadeus_booking | ERROR | API error 32171: Booking failed: id needed

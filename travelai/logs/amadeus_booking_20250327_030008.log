@@ -1,0 +1,130 @@
+2025-03-27 03:05:18,756 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:05:18,758 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:05:18,758 | amadeus_booking | ERROR | Missing traveler information: first_name, last_name
+2025-03-27 03:05:32,251 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:05:32,252 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:05:32,252 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 03:05:33,225 | amadeus_booking | INFO | Got access token: Wp7mXSSPOv...
+2025-03-27 03:05:33,226 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 03:05:33,226 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 03:05:33,227 | amadeus_booking | ERROR | Failed to process flight offer: 'dict' object has no attribute 'split'
+2025-03-27 03:06:51,872 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-03-27 03:06:51,873 | amadeus_booking | INFO | Flight booking requested
+2025-03-27 03:06:51,873 | amadeus_booking | INFO | Getting Amadeus API access token
+2025-03-27 03:06:52,741 | amadeus_booking | INFO | Got access token: ufUsHJ3aPw...
+2025-03-27 03:06:52,742 | amadeus_booking | WARNING | No previous search data available to find original offer
+2025-03-27 03:06:52,742 | amadeus_booking | INFO | Creating flight offer from provided details
+2025-03-27 03:06:52,744 | amadeus_booking | INFO | Booking payload: {
+  "data": {
+    "type": "flight-order",
+    "flightOffers": [
+      {
+        "type": "flight-offer",
+        "id": "1",
+        "source": "GDS",
+        "instantTicketingRequired": false,
+        "nonHomogeneous": false,
+        "lastTicketingDate": "",
+        "itineraries": [
+          {
+            "segments": [
+              {
+                "departure": {
+                  "iataCode": "",
+                  "terminal": null,
+                  "at": "T00:00"
+                },
+                "arrival": {
+                  "iataCode": null,
+                  "terminal": null,
+                  "at": "T00:00"
+                },
+                "carrierCode": "UNITED",
+                "number": "UA4446",
+                "aircraft": {
+                  "code": "CANADAIR"
+                },
+                "operating": {
+                  "carrierCode": "UNITED"
+                },
+                "duration": "PT2H",
+                "id": "1",
+                "numberOfStops": 0
+              }
+            ]
+          }
+        ],
+        "price": {
+          "currency": "EUR",
+          "total": "0.00",
+          "base": "0.00",
+          "grandTotal": "0.00"
+        },
+        "pricingOptions": {
+          "fareType": [
+            "PUBLISHED"
+          ],
+          "includedCheckedBagsOnly": true
+        },
+        "validatingAirlineCodes": [
+          "UNITED"
+        ],
+        "travelerPricings": [
+          {
+            "travelerId": "1",
+            "fareOption": "STANDARD",
+            "travelerType": "ADULT",
+            "price": {
+              "currency": "EUR",
+              "total": "0.00",
+              "base": "0.00"
+            },
+            "fareDetailsBySegment": [
+              {
+                "segmentId": "1",
+                "cabin": "ECONOMY",
+                "fareBasis": "YFFBR",
+                "class": "Y",
+                "includedCheckedBags": {
+                  "quantity": 1
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-01-01",
+        "name": {
+          "firstName": "ak",
+          "lastName": "ak"
+        },
+        "gender": "MALE",
+        "contact": {
+          "emailAddress": "ak@ak.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "99999999"
+            }
+          ]
+        }
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}
+2025-03-27 03:06:52,744 | amadeus_booking | INFO | Sending booking request to https://test.api.amadeus.com/v1/booking/flight-orders
+2025-03-27 03:06:53,685 | amadeus_booking | INFO | Booking API response: HTTP 400
+2025-03-27 03:06:53,690 | amadeus_booking | INFO | Raw API response saved to api_responses/booking_20250327_030653.txt
+2025-03-27 03:06:53,690 | amadeus_booking | ERROR | API errors: Booking failed: carrier code is a 2 or 3 alphanum except 'YY' and 'YYY' (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/operating/carrierCode); departure iataCode must be a 3-letter code (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/departure/iataCode); validatingAirlineCode is a 2 alphanum except 'YY' (Code: 477, Path: /data/flightOffers[0]/validatingAirlineCodes[0]); carrier code is a 2 or 3 alphanum except 'YY' and 'YYY' (Code: 477, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/carrierCode); arrival iataCode needed (Code: 32171, Path: /data/flightOffers[0]/itineraries[0]/segments[0]/arrival/iataCode)

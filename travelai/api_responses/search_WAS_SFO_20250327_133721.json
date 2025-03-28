@@ -1,0 +1,1760 @@
+{
+  "meta": {
+    "count": 10,
+    "links": {
+      "self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=WAS&destinationLocationCode=SFO&departureDate=2025-05-11&adults=1&max=10&travelClass=ECONOMY&currencyCode=USD"
+    }
+  },
+  "data": [
+    {
+      "type": "flight-offer",
+      "id": "1",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-28",
+      "lastTicketingDateTime": "2025-03-28",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT6H5M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "IAD",
+                "at": "2025-05-11T06:30:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "3",
+                "at": "2025-05-11T09:35:00"
+              },
+              "carrierCode": "UA",
+              "number": "1095",
+              "aircraft": {
+                "code": "7M9"
+              },
+              "operating": {
+                "carrierCode": "UA"
+              },
+              "duration": "PT6H5M",
+              "id": "1",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "208.50",
+        "base": "179.70",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "208.50"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "UA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "208.50",
+            "base": "179.70"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "1",
+              "cabin": "ECONOMY",
+              "fareBasis": "KAA2AQDN",
+              "brandedFare": "ECONOMY",
+              "brandedFareLabel": "ECONOMY",
+              "class": "K",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG FIRST",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SECOND BAG",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRIORITY BOARDING",
+                  "isChargeable": true,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "ECONOMY TO ECONOMY PLUS",
+                  "isChargeable": true,
+                  "amenityType": "UPGRADES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MILEAGE ACCRUAL",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "2",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-28",
+      "lastTicketingDateTime": "2025-03-28",
+      "numberOfBookableSeats": 5,
+      "itineraries": [
+        {
+          "duration": "PT6H13M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "IAD",
+                "at": "2025-05-11T08:15:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "3",
+                "at": "2025-05-11T11:28:00"
+              },
+              "carrierCode": "UA",
+              "number": "1366",
+              "aircraft": {
+                "code": "7M9"
+              },
+              "operating": {
+                "carrierCode": "UA"
+              },
+              "duration": "PT6H13M",
+              "id": "8",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "208.50",
+        "base": "179.70",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "208.50"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "UA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "208.50",
+            "base": "179.70"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "8",
+              "cabin": "ECONOMY",
+              "fareBasis": "KAA2AQDN",
+              "brandedFare": "ECONOMY",
+              "brandedFareLabel": "ECONOMY",
+              "class": "K",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG FIRST",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SECOND BAG",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRIORITY BOARDING",
+                  "isChargeable": true,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "ECONOMY TO ECONOMY PLUS",
+                  "isChargeable": true,
+                  "amenityType": "UPGRADES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MILEAGE ACCRUAL",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "3",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-27",
+      "lastTicketingDateTime": "2025-03-27",
+      "numberOfBookableSeats": 3,
+      "itineraries": [
+        {
+          "duration": "PT16H11M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "IAD",
+                "at": "2025-05-11T19:00:00"
+              },
+              "arrival": {
+                "iataCode": "SEA",
+                "at": "2025-05-11T21:45:00"
+              },
+              "carrierCode": "AS",
+              "number": "406",
+              "aircraft": {
+                "code": "73J"
+              },
+              "operating": {
+                "carrierCode": "AS"
+              },
+              "duration": "PT5H45M",
+              "id": "6",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SEA",
+                "at": "2025-05-12T06:00:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "1",
+                "at": "2025-05-12T08:11:00"
+              },
+              "carrierCode": "AS",
+              "number": "1082",
+              "aircraft": {
+                "code": "73J"
+              },
+              "operating": {
+                "carrierCode": "AS"
+              },
+              "duration": "PT2H11M",
+              "id": "7",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "226.63",
+        "base": "182.33",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "226.63"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "AS"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "226.63",
+            "base": "182.33"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "6",
+              "cabin": "ECONOMY",
+              "fareBasis": "QH2OAVBN",
+              "brandedFare": "SV",
+              "brandedFareLabel": "SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "STANDARD PIECE MAX 50LB 62LI",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL 1",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "110V AC POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "7",
+              "cabin": "ECONOMY",
+              "fareBasis": "OH2OAVBN",
+              "brandedFare": "SV",
+              "brandedFareLabel": "SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "STANDARD PIECE MAX 50LB 62LI",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL 1",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "110V AC POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "4",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-27",
+      "lastTicketingDateTime": "2025-03-27",
+      "numberOfBookableSeats": 3,
+      "itineraries": [
+        {
+          "duration": "PT17H41M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "DCA",
+                "terminal": "2",
+                "at": "2025-05-11T17:30:00"
+              },
+              "arrival": {
+                "iataCode": "SEA",
+                "at": "2025-05-11T20:15:00"
+              },
+              "carrierCode": "AS",
+              "number": "3",
+              "aircraft": {
+                "code": "73H"
+              },
+              "operating": {
+                "carrierCode": "AS"
+              },
+              "duration": "PT5H45M",
+              "id": "13",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "SEA",
+                "at": "2025-05-12T06:00:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "1",
+                "at": "2025-05-12T08:11:00"
+              },
+              "carrierCode": "AS",
+              "number": "1082",
+              "aircraft": {
+                "code": "73J"
+              },
+              "operating": {
+                "carrierCode": "AS"
+              },
+              "duration": "PT2H11M",
+              "id": "14",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "226.63",
+        "base": "182.33",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "226.63"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "AS"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "226.63",
+            "base": "182.33"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "13",
+              "cabin": "ECONOMY",
+              "fareBasis": "QH2OAVBN",
+              "brandedFare": "SV",
+              "brandedFareLabel": "SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "STANDARD PIECE MAX 50LB 62LI",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL 1",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "110V AC POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "14",
+              "cabin": "ECONOMY",
+              "fareBasis": "OH2OAVBN",
+              "brandedFare": "SV",
+              "brandedFareLabel": "SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "STANDARD PIECE MAX 50LB 62LI",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL 1",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "110V AC POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "5",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-27",
+      "lastTicketingDateTime": "2025-03-27",
+      "numberOfBookableSeats": 3,
+      "itineraries": [
+        {
+          "duration": "PT12H14M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "IAD",
+                "at": "2025-05-11T07:00:00"
+              },
+              "arrival": {
+                "iataCode": "LAX",
+                "terminal": "6",
+                "at": "2025-05-11T10:00:00"
+              },
+              "carrierCode": "AS",
+              "number": "214",
+              "aircraft": {
+                "code": "73J"
+              },
+              "operating": {
+                "carrierCode": "AS"
+              },
+              "duration": "PT6H",
+              "id": "10",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "LAX",
+                "terminal": "6",
+                "at": "2025-05-11T14:45:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "1",
+                "at": "2025-05-11T16:14:00"
+              },
+              "carrierCode": "AS",
+              "number": "3407",
+              "aircraft": {
+                "code": "E75"
+              },
+              "duration": "PT1H29M",
+              "id": "11",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "237.56",
+        "base": "192.56",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "237.56"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "AS"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "237.56",
+            "base": "192.56"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "10",
+              "cabin": "ECONOMY",
+              "fareBasis": "OH2OAVBN",
+              "brandedFare": "SV",
+              "brandedFareLabel": "SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "STANDARD PIECE MAX 50LB 62LI",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL 1",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "110V AC POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "11",
+              "cabin": "ECONOMY",
+              "fareBasis": "SH4OAVBN",
+              "brandedFare": "SV",
+              "brandedFareLabel": "SAVER",
+              "class": "X",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 2
+              },
+              "amenities": [
+                {
+                  "description": "STANDARD PIECE MAX 50LB 62LI",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MEAL 1",
+                  "isChargeable": true,
+                  "amenityType": "MEAL",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "110V AC POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "USB POWER",
+                  "isChargeable": false,
+                  "amenityType": "ENTERTAINMENT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "6",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-28",
+      "lastTicketingDateTime": "2025-03-28",
+      "numberOfBookableSeats": 1,
+      "itineraries": [
+        {
+          "duration": "PT6H6M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "IAD",
+                "at": "2025-05-11T16:00:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "3",
+                "at": "2025-05-11T19:06:00"
+              },
+              "carrierCode": "UA",
+              "number": "2142",
+              "aircraft": {
+                "code": "7M9"
+              },
+              "operating": {
+                "carrierCode": "UA"
+              },
+              "duration": "PT6H6M",
+              "id": "2",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "248.51",
+        "base": "216.91",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "248.51"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "UA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "248.51",
+            "base": "216.91"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "2",
+              "cabin": "ECONOMY",
+              "fareBasis": "LAA2AQDN",
+              "brandedFare": "ECONOMY",
+              "brandedFareLabel": "ECONOMY",
+              "class": "L",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG FIRST",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SECOND BAG",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRIORITY BOARDING",
+                  "isChargeable": true,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "ECONOMY TO ECONOMY PLUS",
+                  "isChargeable": true,
+                  "amenityType": "UPGRADES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MILEAGE ACCRUAL",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "7",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-28",
+      "lastTicketingDateTime": "2025-03-28",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT6H14M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "DCA",
+                "terminal": "2",
+                "at": "2025-05-11T07:00:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "3",
+                "at": "2025-05-11T10:14:00"
+              },
+              "carrierCode": "UA",
+              "number": "369",
+              "aircraft": {
+                "code": "7M8"
+              },
+              "operating": {
+                "carrierCode": "UA"
+              },
+              "duration": "PT6H14M",
+              "id": "9",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "248.51",
+        "base": "216.91",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "248.51"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "UA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "248.51",
+            "base": "216.91"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "9",
+              "cabin": "ECONOMY",
+              "fareBasis": "LAA2AQDN",
+              "brandedFare": "ECONOMY",
+              "brandedFareLabel": "ECONOMY",
+              "class": "L",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG FIRST",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SECOND BAG",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRIORITY BOARDING",
+                  "isChargeable": true,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "ECONOMY TO ECONOMY PLUS",
+                  "isChargeable": true,
+                  "amenityType": "UPGRADES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MILEAGE ACCRUAL",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "8",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-28",
+      "lastTicketingDateTime": "2025-03-28",
+      "numberOfBookableSeats": 5,
+      "itineraries": [
+        {
+          "duration": "PT6H15M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "DCA",
+                "terminal": "2",
+                "at": "2025-05-11T17:59:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "3",
+                "at": "2025-05-11T21:14:00"
+              },
+              "carrierCode": "UA",
+              "number": "698",
+              "aircraft": {
+                "code": "7M8"
+              },
+              "operating": {
+                "carrierCode": "UA"
+              },
+              "duration": "PT6H15M",
+              "id": "12",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "248.51",
+        "base": "216.91",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "248.51"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "UA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "248.51",
+            "base": "216.91"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "12",
+              "cabin": "ECONOMY",
+              "fareBasis": "LAA2AQDN",
+              "brandedFare": "ECONOMY",
+              "brandedFareLabel": "ECONOMY",
+              "class": "L",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG FIRST",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SECOND BAG",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRIORITY BOARDING",
+                  "isChargeable": true,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "ECONOMY TO ECONOMY PLUS",
+                  "isChargeable": true,
+                  "amenityType": "UPGRADES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MILEAGE ACCRUAL",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "9",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-28",
+      "lastTicketingDateTime": "2025-03-28",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT6H9M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "BWI",
+                "at": "2025-05-11T06:35:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "3",
+                "at": "2025-05-11T09:44:00"
+              },
+              "carrierCode": "UA",
+              "number": "1259",
+              "aircraft": {
+                "code": "7M8"
+              },
+              "operating": {
+                "carrierCode": "UA"
+              },
+              "duration": "PT6H9M",
+              "id": "3",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "254.50",
+        "base": "222.50",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "254.50"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "UA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "254.50",
+            "base": "222.50"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "3",
+              "cabin": "ECONOMY",
+              "fareBasis": "LAA2JQDN",
+              "brandedFare": "ECONOMY",
+              "brandedFareLabel": "ECONOMY",
+              "class": "L",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG FIRST",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SECOND BAG",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRIORITY BOARDING",
+                  "isChargeable": true,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "ECONOMY TO ECONOMY PLUS",
+                  "isChargeable": true,
+                  "amenityType": "UPGRADES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MILEAGE ACCRUAL",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "flight-offer",
+      "id": "10",
+      "source": "GDS",
+      "instantTicketingRequired": false,
+      "nonHomogeneous": false,
+      "oneWay": false,
+      "isUpsellOffer": false,
+      "lastTicketingDate": "2025-03-28",
+      "lastTicketingDateTime": "2025-03-28",
+      "numberOfBookableSeats": 9,
+      "itineraries": [
+        {
+          "duration": "PT8H11M",
+          "segments": [
+            {
+              "departure": {
+                "iataCode": "DCA",
+                "terminal": "2",
+                "at": "2025-05-11T06:25:00"
+              },
+              "arrival": {
+                "iataCode": "ORD",
+                "terminal": "1",
+                "at": "2025-05-11T07:40:00"
+              },
+              "carrierCode": "UA",
+              "number": "1793",
+              "aircraft": {
+                "code": "7M8"
+              },
+              "operating": {
+                "carrierCode": "UA"
+              },
+              "duration": "PT2H15M",
+              "id": "4",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            },
+            {
+              "departure": {
+                "iataCode": "ORD",
+                "terminal": "1",
+                "at": "2025-05-11T08:45:00"
+              },
+              "arrival": {
+                "iataCode": "SFO",
+                "terminal": "3",
+                "at": "2025-05-11T11:36:00"
+              },
+              "carrierCode": "UA",
+              "number": "1387",
+              "aircraft": {
+                "code": "777"
+              },
+              "operating": {
+                "carrierCode": "UA"
+              },
+              "duration": "PT4H51M",
+              "id": "5",
+              "numberOfStops": 0,
+              "blacklistedInEU": false
+            }
+          ]
+        }
+      ],
+      "price": {
+        "currency": "USD",
+        "total": "258.21",
+        "base": "216.91",
+        "fees": [
+          {
+            "amount": "0.00",
+            "type": "SUPPLIER"
+          },
+          {
+            "amount": "0.00",
+            "type": "TICKETING"
+          }
+        ],
+        "grandTotal": "258.21"
+      },
+      "pricingOptions": {
+        "fareType": [
+          "PUBLISHED"
+        ],
+        "includedCheckedBagsOnly": false
+      },
+      "validatingAirlineCodes": [
+        "UA"
+      ],
+      "travelerPricings": [
+        {
+          "travelerId": "1",
+          "fareOption": "STANDARD",
+          "travelerType": "ADULT",
+          "price": {
+            "currency": "USD",
+            "total": "258.21",
+            "base": "216.91"
+          },
+          "fareDetailsBySegment": [
+            {
+              "segmentId": "4",
+              "cabin": "ECONOMY",
+              "fareBasis": "LAA2AQDN",
+              "brandedFare": "ECONOMY",
+              "brandedFareLabel": "ECONOMY",
+              "class": "L",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG FIRST",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SECOND BAG",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRIORITY BOARDING",
+                  "isChargeable": true,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "ECONOMY TO ECONOMY PLUS",
+                  "isChargeable": true,
+                  "amenityType": "UPGRADES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MILEAGE ACCRUAL",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            },
+            {
+              "segmentId": "5",
+              "cabin": "ECONOMY",
+              "fareBasis": "LAA2AQDN",
+              "brandedFare": "ECONOMY",
+              "brandedFareLabel": "ECONOMY",
+              "class": "L",
+              "includedCheckedBags": {
+                "quantity": 0
+              },
+              "includedCabinBags": {
+                "quantity": 1
+              },
+              "amenities": [
+                {
+                  "description": "CHECKED BAG FIRST",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "SECOND BAG",
+                  "isChargeable": true,
+                  "amenityType": "BAGGAGE",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRE RESERVED SEAT ASSIGNMENT",
+                  "isChargeable": false,
+                  "amenityType": "PRE_RESERVED_SEAT",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "PRIORITY BOARDING",
+                  "isChargeable": true,
+                  "amenityType": "TRAVEL_SERVICES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "ECONOMY TO ECONOMY PLUS",
+                  "isChargeable": true,
+                  "amenityType": "UPGRADES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                },
+                {
+                  "description": "MILEAGE ACCRUAL",
+                  "isChargeable": false,
+                  "amenityType": "BRANDED_FARES",
+                  "amenityProvider": {
+                    "name": "BrandedFare"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dictionaries": {
+    "locations": {
+      "ORD": {
+        "cityCode": "CHI",
+        "countryCode": "US"
+      },
+      "LAX": {
+        "cityCode": "LAX",
+        "countryCode": "US"
+      },
+      "DCA": {
+        "cityCode": "WAS",
+        "countryCode": "US"
+      },
+      "BWI": {
+        "cityCode": "WAS",
+        "countryCode": "US"
+      },
+      "IAD": {
+        "cityCode": "WAS",
+        "countryCode": "US"
+      },
+      "SFO": {
+        "cityCode": "SFO",
+        "countryCode": "US"
+      },
+      "SEA": {
+        "cityCode": "SEA",
+        "countryCode": "US"
+      }
+    },
+    "aircraft": {
+      "E75": "EMBRAER 175",
+      "7M8": "BOEING 737 MAX 8",
+      "7M9": "BOEING 737 MAX 9",
+      "777": "BOEING 777-200/300",
+      "73H": "BOEING 737-800 (WINGLETS)",
+      "73J": "BOEING 737-900"
+    },
+    "currencies": {
+      "USD": "US DOLLAR"
+    },
+    "carriers": {
+      "AS": "ALASKA AIRLINES",
+      "UA": "UNITED AIRLINES"
+    }
+  }
+}
