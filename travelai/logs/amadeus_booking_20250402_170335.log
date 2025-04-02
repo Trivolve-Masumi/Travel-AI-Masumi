@@ -1,0 +1,9 @@
+2025-04-02 17:05:15,039 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-04-02 17:05:15,040 | amadeus_booking | INFO | Flight booking requested
+2025-04-02 17:05:15,040 | amadeus_booking | ERROR | Missing traveler information: date_of_birth
+2025-04-02 17:05:27,356 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-04-02 17:05:27,356 | amadeus_booking | INFO | Flight booking requested
+2025-04-02 17:05:27,356 | amadeus_booking | INFO | Saved booking data to bookings/ORDER_20250402170527.json
+2025-04-02 17:05:27,447 | amadeus_booking | INFO | Generated e-ticket PDF: booking_pdfs/eticket_RAGOXF_ORDER_20250402170527.pdf

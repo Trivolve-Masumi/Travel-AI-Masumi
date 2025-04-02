@@ -1,0 +1,67 @@
+{
+  "data": {
+    "type": "flight-order",
+    "id": "ORDER_20250402165447",
+    "queuingOfficeId": "AMADEUS",
+    "associatedRecords": [
+      {
+        "reference": "KQWBUW",
+        "creationDateTime": "2025-04-02T16:54:47.231800",
+        "originSystemCode": "AMADEUS",
+        "flightOfferId": "1"
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-09-18",
+        "name": {
+          "firstName": "Mohamed",
+          "lastName": "Fayaz"
+        },
+        "gender": "male",
+        "contact": {
+          "emailAddress": "fayazm0ist@gmail.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "86085840563"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "documentType": "TICKET",
+            "number": "0275393797788",
+            "validityCountry": "US"
+          }
+        ]
+      }
+    ],
+    "flightOffers": [
+      {
+        "price": "105.03 USD",
+        "flight_number": "F92678",
+        "airline": "FRONTIER AIRLINES",
+        "departure": {
+          "airport": "SFO",
+          "terminal": "I",
+          "date": "2025-04-03",
+          "time": "05:15"
+        },
+        "arrival": {
+          "airport": "ONT",
+          "date": "2025-04-03",
+          "time": "06:36"
+        },
+        "aircraft": "AIRBUS A321",
+        "duration": "1h 21m Nonstop"
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "data": {
+    "type": "flight-order",
+    "id": "ORDER_20250402170843",
+    "queuingOfficeId": "AMADEUS",
+    "associatedRecords": [
+      {
+        "reference": "VFYXXL",
+        "creationDateTime": "2025-04-02T17:08:43.269298",
+        "originSystemCode": "AMADEUS",
+        "flightOfferId": "1"
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-09-18",
+        "name": {
+          "firstName": "Mohamed",
+          "lastName": "Fayaz"
+        },
+        "gender": "male",
+        "contact": {
+          "emailAddress": "fayazm0ist@gmail.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "86085840563"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "documentType": "TICKET",
+            "number": "0006201575644",
+            "validityCountry": "US"
+          }
+        ]
+      }
+    ],
+    "flightOffers": [
+      {
+        "id": "1",
+        "flight_number": "F92678",
+        "carrier": "FRONTIER AIRLINES",
+        "origin": "SFO",
+        "destination": "LAX",
+        "departure_date": "2025-04-03",
+        "departure_time": "05:15",
+        "arrival_time": "06:36",
+        "duration": "1h 21m",
+        "aircraft": "AIRBUS A321",
+        "pricing": {
+          "base_fare": 83.43,
+          "total": 105.03,
+          "currency": "USD"
+        },
+        "cabin": "ECONOMY"
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}

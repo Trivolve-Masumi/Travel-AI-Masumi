@@ -1,0 +1,71 @@
+{
+  "data": {
+    "type": "flight-order",
+    "id": "ORDER_20250402163940",
+    "queuingOfficeId": "AMADEUS",
+    "associatedRecords": [
+      {
+        "reference": "FCCIKM",
+        "creationDateTime": "2025-04-02T16:39:40.453034",
+        "originSystemCode": "AMADEUS",
+        "flightOfferId": "1"
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-04-18",
+        "name": {
+          "firstName": "Mohamed",
+          "lastName": "Fayaz"
+        },
+        "gender": "male",
+        "contact": {
+          "emailAddress": "fayazm0ist@gmail.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "86085840563"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "documentType": "TICKET",
+            "number": "0274178760958",
+            "validityCountry": "US"
+          }
+        ]
+      }
+    ],
+    "flightOffers": [
+      {
+        "id": "1",
+        "price": "98.06 EUR",
+        "flight_number": "F92678",
+        "airlines": "FRONTIER AIRLINES",
+        "departure": {
+          "airport": "SFO",
+          "terminal": "I",
+          "datetime": "2023-04-03T05:15"
+        },
+        "arrival": {
+          "airport": "ONT",
+          "datetime": "2023-04-03T06:36"
+        },
+        "duration": "1h 21m",
+        "aircraft": "AIRBUS A321",
+        "pricing": {
+          "base_fare": "78.00 EUR",
+          "total": "98.06 EUR"
+        },
+        "cabin": "Economy"
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}

@@ -5,6 +5,7 @@ import logging
 import uuid
 import json
 from datetime import datetime, timezone, timedelta
+from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from fastapi import FastAPI, Query, HTTPException
 from pydantic import BaseModel, Field
@@ -13,10 +14,13 @@ import uvicorn
 from masumi_crewai.config import Config
 from masumi_crewai.payment import Payment, Amount
 import aiohttp
+from fastapi.responses import FileResponse
+from fastapi import Path
 
 # Use relative imports since we're in a package
 from .crew import TravelAICrew
 from .tools.amadeus_booking_tool import AmadeusFlightBookingTool
+import asyncio
 
 # Load environment variables
 load_dotenv()
@@ -27,8 +31,8 @@ AMADEUS_API_KEY = os.getenv("AMADEUS_API_KEY")
 AMADEUS_API_SECRET = os.getenv("AMADEUS_API_SECRET")
 PAYMENT_SERVICE_URL = os.getenv("PAYMENT_SERVICE_URL")
 PAYMENT_API_KEY = os.getenv("PAYMENT_API_KEY")
-AGENT_IDENTIFIER = os.getenv("AGENT_IDENTIFIER", "e6c57104dfa95943ffab95eafe1f12ed9a8da791678bfbf765b056491d37f35636838a945e1c6e6a581977c4567f779bae9081c8505f34ab8fff26ae")
-SELLER_VKEY = os.getenv("SELLER_VKEY", "4203a554f750aa3ab74aea57161f95255845e048c67342c4df31ffa6")
+AGENT_IDENTIFIER = os.getenv("AGENT_IDENTIFIER", "e6c57104dfa95943ffab95eafe1f12ed9a8da791678bfbf765b05649f1d3808d05fa9d8e1b180a6d1649c7a2108a232c954816dec581f5b37b7c6c15")
+SELLER_VKEY = os.getenv("SELLER_VKEY", "a764e9ff46fd09668a174e94e7b14ea6fe53b61013d314d69b7bf41d")
 
 # Set up logging
 def setup_logging():
@@ -60,6 +64,14 @@ app = FastAPI(
     title="TravelAI Flight Assistant API",
     description="MIP-003 compliant API for flight search and booking using CrewAI and Amadeus",
     version="1.0.0"
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Change this to specific domains for security
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # Initialize ChromaDB for vector storage
@@ -171,7 +183,7 @@ def test_amadeus_api():
 # ─────────────────────────────────────────────────────────────────────────────
 # CrewAI Task Execution
 # ─────────────────────────────────────────────────────────────────────────────
-async def execute_crew_task(query: str) -> str:
+async def execute_crew_task(query: str, job_id: str, payment_id: str) -> str:
     """ Execute a CrewAI task with TravelAI Flight Assistant """
     logger.info(f"Processing query: {query}")
     
@@ -179,9 +191,48 @@ async def execute_crew_task(query: str) -> str:
     travel_crew = TravelAICrew()
     
     # Process the query using our dedicated method
-    result = travel_crew.process_input(query)
-    
+    result = await asyncio.to_thread(travel_crew.process_input, query)
+
     logger.info("Crew task completed successfully")
+    
+    job = jobs[job_id]
+
+    # Store the result
+    job["result"] = result
+    
+    # Initialize conversation history with the initial query and response
+    job["conversation"] = [
+        {"role": "user", "content": query},
+        {"role": "assistant", "content": result}
+    ]
+    
+    # Store the job in vector DB for persistent storage if available
+    if job_collection:
+        try:
+            job_collection.upsert(
+                ids=[job_id],
+                documents=[query],  # Store the original query for embeddings
+                metadatas=[{"job_data": json.dumps(job)}]
+            )
+        except Exception as e:
+            logger.error(f"Error storing job in vector DB: {str(e)}")
+    
+    # Convert result to string for hash
+    result_str = str(result)
+    
+    # Mark payment as completed on Masumi
+    result_hash = result_str[:64] if len(result_str) >= 64 else result_str
+    await payment_instances[job_id].complete_payment(payment_id, result_hash)
+    logger.info(f"Payment marked as completed for job {job_id}")
+    
+    # Update job status
+    job["status"] = "completed"
+    
+    # Stop monitoring payment status
+    if job_id in payment_instances:
+        payment_instances[job_id].stop_status_monitoring()
+        del payment_instances[job_id]
+        
     return result
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -206,44 +257,45 @@ async def handle_payment_status(job_id: str, payment_id: str) -> None:
         query_text = job["input_data"]
         logger.info(f"Processing query: {query_text}")
         
-        result = await execute_crew_task(query_text)
-        logger.info(f"Crew task completed for job {job_id}")
+        asyncio.create_task(execute_crew_task(query_text, job_id, payment_id))
 
-        # Store the result
-        job["result"] = result
+        # logger.info(f"Crew task completed for job {job_id}")
         
-        # Initialize conversation history with the initial query and response
-        job["conversation"] = [
-            {"role": "user", "content": query_text},
-            {"role": "assistant", "content": result}
-        ]
+        # # Store the result
+        # job["result"] = result
         
-        # Store the job in vector DB for persistent storage if available
-        if job_collection:
-            try:
-                job_collection.upsert(
-                    ids=[job_id],
-                    documents=[query_text],  # Store the original query for embeddings
-                    metadatas=[{"job_data": json.dumps(job)}]
-                )
-            except Exception as e:
-                logger.error(f"Error storing job in vector DB: {str(e)}")
+        # # Initialize conversation history with the initial query and response
+        # job["conversation"] = [
+        #     {"role": "user", "content": query_text},
+        #     {"role": "assistant", "content": result}
+        # ]
         
-        # Convert result to string for hash
-        result_str = str(result)
+        # # Store the job in vector DB for persistent storage if available
+        # if job_collection:
+        #     try:
+        #         job_collection.upsert(
+        #             ids=[job_id],
+        #             documents=[query_text],  # Store the original query for embeddings
+        #             metadatas=[{"job_data": json.dumps(job)}]
+        #         )
+        #     except Exception as e:
+        #         logger.error(f"Error storing job in vector DB: {str(e)}")
         
-        # Mark payment as completed on Masumi
-        result_hash = result_str[:64] if len(result_str) >= 64 else result_str
-        await payment_instances[job_id].complete_payment(payment_id, result_hash)
-        logger.info(f"Payment marked as completed for job {job_id}")
+        # # Convert result to string for hash
+        # result_str = str(result)
         
-        # Update job status
-        job["status"] = "completed"
+        # # Mark payment as completed on Masumi
+        # result_hash = result_str[:64] if len(result_str) >= 64 else result_str
+        # await payment_instances[job_id].complete_payment(payment_id, result_hash)
+        # logger.info(f"Payment marked as completed for job {job_id}")
         
-        # Stop monitoring payment status
-        if job_id in payment_instances:
-            payment_instances[job_id].stop_status_monitoring()
-            del payment_instances[job_id]
+        # # Update job status
+        # job["status"] = "completed"
+        
+        # # Stop monitoring payment status
+        # if job_id in payment_instances:
+        #     payment_instances[job_id].stop_status_monitoring()
+        #     del payment_instances[job_id]
         
     except Exception as e:
         logger.error(f"Error processing job {job_id} after payment: {str(e)}")
@@ -432,7 +484,7 @@ async def provide_input(request_body: ProvideInputRequest):
     job = jobs[job_id]
     
     # Check if payment is completed
-    if job.get("payment_status") != "completed":
+    if job.get("status") != "completed":
         return {
             "status": "error", 
             "message": "Payment must be completed before providing input"
@@ -579,6 +631,16 @@ async def health():
         "timestamp": datetime.now().isoformat()
     }
 
+@app.get("/bookings/{file_name}")
+async def serve_booking_file(file_name: str = Path(..., description="Name of the booking file to serve")):
+    """
+    Serves booking files from the bookings directory.
+    """
+    file_path = f"booking_pdfs/{file_name}"
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="Booking file not found")
+    return FileResponse(file_path)
+
 # ─────────────────────────────────────────────────────────────────────────────
 # Main logic if called as a script
 # ─────────────────────────────────────────────────────────────────────────────
@@ -656,3 +718,9 @@ if __name__ == "__main__":
     else:
         print("Running CrewAI as standalone script is not supported when using payments.")
         print("Start the API using `python -m main --api` instead.")
+        
+        
+        travel_crew = TravelAICrew()
+        result = travel_crew.process_input("fly from sf to la, mohamed fayaz, male, 86085840563, fayazm0ist@gmail.com, 18/09/2000 dob. pick FRONTIER AIRLINES F92678 and book")
+        
+        print("done")

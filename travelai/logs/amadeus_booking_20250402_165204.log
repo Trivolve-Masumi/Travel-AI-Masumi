@@ -1,0 +1,9 @@
+2025-04-02 16:54:40,396 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-04-02 16:54:40,397 | amadeus_booking | INFO | Flight booking requested
+2025-04-02 16:54:40,397 | amadeus_booking | ERROR | Missing traveler information: date_of_birth
+2025-04-02 16:54:47,231 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-04-02 16:54:47,231 | amadeus_booking | INFO | Flight booking requested
+2025-04-02 16:54:47,232 | amadeus_booking | INFO | Saved booking data to bookings/ORDER_20250402165447.json
+2025-04-02 16:54:47,328 | amadeus_booking | INFO | Generated e-ticket PDF: booking_pdfs/eticket_KQWBUW_ORDER_20250402165447.pdf

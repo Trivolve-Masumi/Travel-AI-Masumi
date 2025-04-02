@@ -1,0 +1,19 @@
+2025-04-02 17:05:03,725 | amadeus_flight_search | INFO | Flight search: SFO to LAX on 2025-04-03
+2025-04-02 17:05:03,726 | amadeus_flight_search | INFO | Getting Amadeus API access token
+2025-04-02 17:05:04,495 | amadeus_flight_search | INFO | Got access token: j7XCU2zdn3...
+2025-04-02 17:05:04,495 | amadeus_flight_search | INFO | Request parameters: {
+  "originLocationCode": "SFO",
+  "destinationLocationCode": "LAX",
+  "departureDate": "2025-04-03",
+  "adults": 1,
+  "max": 15,
+  "travelClass": "ECONOMY",
+  "nonStop": "true",
+  "currencyCode": "USD"
+}
+2025-04-02 17:05:04,496 | amadeus_flight_search | INFO | Sending request to https://test.api.amadeus.com/v2/shopping/flight-offers
+2025-04-02 17:05:06,173 | amadeus_flight_search | INFO | API response received in 1.68 seconds
+2025-04-02 17:05:06,173 | amadeus_flight_search | INFO | Response status code: 200
+2025-04-02 17:05:06,184 | amadeus_flight_search | INFO | Raw API response saved to api_responses/search_SFO_LAX_20250402_170506.txt
+2025-04-02 17:05:06,188 | amadeus_flight_search | INFO | Structured API response saved to api_responses/search_SFO_LAX_20250402_170506.json
+2025-04-02 17:05:06,188 | amadeus_flight_search | INFO | Found 15 flights

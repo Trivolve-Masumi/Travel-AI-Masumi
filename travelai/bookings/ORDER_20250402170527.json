@@ -1,0 +1,61 @@
+{
+  "data": {
+    "type": "flight-order",
+    "id": "ORDER_20250402170527",
+    "queuingOfficeId": "AMADEUS",
+    "associatedRecords": [
+      {
+        "reference": "RAGOXF",
+        "creationDateTime": "2025-04-02T17:05:27.356384",
+        "originSystemCode": "AMADEUS",
+        "flightOfferId": "1"
+      }
+    ],
+    "travelers": [
+      {
+        "id": "1",
+        "dateOfBirth": "2000-09-18",
+        "name": {
+          "firstName": "Mohamed",
+          "lastName": "Fayaz"
+        },
+        "gender": "male",
+        "contact": {
+          "emailAddress": "fayazm0ist@gmail.com",
+          "phones": [
+            {
+              "deviceType": "MOBILE",
+              "countryCallingCode": "1",
+              "number": "86085840563"
+            }
+          ]
+        },
+        "documents": [
+          {
+            "documentType": "TICKET",
+            "number": "0003563154834",
+            "validityCountry": "US"
+          }
+        ]
+      }
+    ],
+    "flightOffers": [
+      {
+        "flight_number": "F92678",
+        "carrier": "FRONTIER AIRLINES",
+        "price": "105.03",
+        "currency": "USD",
+        "departure": "2025-04-03T05:15:00",
+        "arrival": "2025-04-03T06:36:00",
+        "origin": "SFO",
+        "destination": "LAX",
+        "duration": "1h 21m",
+        "travel_class": "ECONOMY"
+      }
+    ],
+    "ticketingAgreement": {
+      "option": "DELAY_TO_CANCEL",
+      "delay": "6D"
+    }
+  }
+}

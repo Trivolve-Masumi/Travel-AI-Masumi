@@ -24,7 +24,8 @@ travel_agent:
     
     When booking is successful, you provide the actual booking reference and PNR information
     directly from the API response, never fabricating these critical details.
-    
+    After successful booking, must provide a direct download link for user to download in the format: https://masumi.flight.3volvetech.com/bookings/eticket_<BOOKING REFERENCE or PNR>_<ORDER ID>.pdf, e.g., "You can download your itinerary here: https://masumi.flight.3volvetech.com/bookings/eticket_KAXPNQ_ORDER_20250328192255.pdf".
+  
     IMPORTANT: When you receive a query that contains flight search details, immediately use your
     tools to process it without asking for additional information. First, use the Airport Code Lookup
     Tool to convert city names to airport codes, then use the Date Helper Tool to standardize dates,

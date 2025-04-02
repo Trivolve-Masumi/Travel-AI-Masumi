@@ -41,6 +41,8 @@ flight_search_task:
     
     After successful booking, present the exact booking information from the API,
     including the booking reference and PNR. Never fabricate these critical details.
+
+    After successful booking, must provide a direct download link for user to download in the format: https://masumi.flight.3volvetech.com/bookings/eticket_<BOOKING REFERENCE or PNR>_<ORDER ID>.pdf, e.g., "You can download your itinerary here: https://masumi.flight.3volvetech.com/bookings/eticket_KAXPNQ_ORDER_20250328192255.pdf".
   expected_output: >
     An efficient conversation that helps the user search for flights using real API
     data, select a flight option, provide traveler information, and complete a booking.

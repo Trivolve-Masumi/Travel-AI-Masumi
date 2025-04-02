@@ -1,0 +1,9 @@
+2025-04-02 17:08:38,153 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-04-02 17:08:38,153 | amadeus_booking | INFO | Flight booking requested
+2025-04-02 17:08:38,154 | amadeus_booking | ERROR | Missing traveler information: date_of_birth
+2025-04-02 17:08:43,268 | amadeus_booking | INFO | 
+===== BOOKING FLIGHT =====
+2025-04-02 17:08:43,269 | amadeus_booking | INFO | Flight booking requested
+2025-04-02 17:08:43,269 | amadeus_booking | INFO | Saved booking data to bookings/ORDER_20250402170843.json
+2025-04-02 17:08:43,363 | amadeus_booking | INFO | Generated e-ticket PDF: booking_pdfs/eticket_VFYXXL_ORDER_20250402170843.pdf
